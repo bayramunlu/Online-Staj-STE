@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStajSTE", "OnlineStajSTE\OnlineStajSTE.csproj", "{59E10A67-FD07-4056-AD71-59341745BF27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStajSTE.Tests", "OnlineStajSTE.Tests\OnlineStajSTE.Tests.csproj", "{266E347E-A8BE-4902-B157-54781A6FCCAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59E10A67-FD07-4056-AD71-59341745BF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E10A67-FD07-4056-AD71-59341745BF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E10A67-FD07-4056-AD71-59341745BF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E10A67-FD07-4056-AD71-59341745BF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266E347E-A8BE-4902-B157-54781A6FCCAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266E347E-A8BE-4902-B157-54781A6FCCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266E347E-A8BE-4902-B157-54781A6FCCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266E347E-A8BE-4902-B157-54781A6FCCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {089EC84E-AE8F-4E85-A7AD-3FB06387003F}
+	EndGlobalSection
+EndGlobal

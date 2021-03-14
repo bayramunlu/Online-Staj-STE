@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="kullanici.master.cs" Inherits="OnlineStajSTE.kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" //>
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"/>
+
+
+
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css"/>
+
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css"/>
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css"/>
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css"/>
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css"/>
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css"/>
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css"/>
+		<link rel="stylesheet" href="vendor/bootstrap-star-rating/css/star-rating.min.css"/>
+		<link rel="stylesheet" href="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.css"/>
+
+		<link rel="stylesheet" href="css/theme.css"/>
+		<link rel="stylesheet" href="css/theme-elements.css"/>
+		<link rel="stylesheet" href="css/theme-blog.css"/>
+		<link rel="stylesheet" href="css/theme-shop.css"/>
+
+
+
+		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css"/>
+
+		<link rel="stylesheet" href="css/custom.css"/>
+
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+			<div class="body">
+		
+			<header id="header">
+				<div class="header-body header-body-bottom-border-fixed box-shadow-none border-top-0">
+					
+					<div class="header-container container">
+						<div class="header-row py-2">
+							<div class="header-column w-100">
+								<div class="header-row justify-content-between">
+									<div class="header-logo z-index-2 col-lg-2 px-0">
+									
+									</div>
+									<div class="header-nav-features header-nav-features-no-border col-lg-5 col-xl-6 px-0 ml-0">
+										<div class="header-nav-feature pr-lg-4 pr-xl-5 mr-4">
+											
+												<div class="search-with-select">
+													
+													<div class="search-form-wrapper input-group">
+													<span class="input-group-append">
+															<asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem Value="01">Adana</asp:ListItem>
+            <asp:ListItem Value="02">Adiyaman</asp:ListItem>
+            <asp:ListItem Value="03">Afyonkarahisar</asp:ListItem>
+            <asp:ListItem Value="04">Agri</asp:ListItem>
+            <asp:ListItem Value="05">Amasya</asp:ListItem>
+            <asp:ListItem Value="06">Ankara</asp:ListItem>
+            <asp:ListItem Value="07">Antalya</asp:ListItem>
+            <asp:ListItem Value="08">Artvin</asp:ListItem>
+            <asp:ListItem Value="09">Aydin</asp:ListItem>
+            <asp:ListItem Value="10">Balikesir</asp:ListItem>
+            <asp:ListItem Value="11">Bilecik</asp:ListItem>
+            <asp:ListItem Value="12">Bingol</asp:ListItem>
+            <asp:ListItem Value="13">Bitlis</asp:ListItem>
+            <asp:ListItem Value="14">Bolu</asp:ListItem>
+            <asp:ListItem Value="15">Burdur</asp:ListItem>
+            <asp:ListItem Value="16">Bursa</asp:ListItem>
+            <asp:ListItem Value="17">Canakkale</asp:ListItem>
+            <asp:ListItem Value="18">Cankırı</asp:ListItem>
+            <asp:ListItem Value="19">Corum</asp:ListItem>
+            <asp:ListItem Value="20">Denizli</asp:ListItem>
+            <asp:ListItem Value="21">Diyarbakir</asp:ListItem>
+            <asp:ListItem Value="22">Edirne</asp:ListItem>
+            <asp:ListItem Value="23">Elazig</asp:ListItem>
+            <asp:ListItem Value="24">Erzincan</asp:ListItem>
+            <asp:ListItem Value="25">Erzurum</asp:ListItem>
+            <asp:ListItem Value="26">Eskisehir</asp:ListItem>
+            <asp:ListItem Value="27">Gaziantep</asp:ListItem>
+            <asp:ListItem Value="28">Giresun</asp:ListItem>
+            <asp:ListItem Value="29">Gümüshane</asp:ListItem>
+            <asp:ListItem Value="30">Hakkari</asp:ListItem>
+            <asp:ListItem Value="31">Hatay</asp:ListItem>
+            <asp:ListItem Value="32">Isparta</asp:ListItem>
+            <asp:ListItem Value="33">Mersin</asp:ListItem>
+            <asp:ListItem Value="34">İstanbul</asp:ListItem>
+            <asp:ListItem Value="35">İzmir</asp:ListItem>
+            <asp:ListItem Value="36">Kars</asp:ListItem>
+            <asp:ListItem Value="37">Kastamonu</asp:ListItem>
+            <asp:ListItem Value="38">Kayseri</asp:ListItem>
+            <asp:ListItem Value="39">Kirklareli</asp:ListItem>
+            <asp:ListItem Value="40">Kirsehir</asp:ListItem>
+            <asp:ListItem Value="41">Kocaeli</asp:ListItem>
+            <asp:ListItem Value="42">Konya</asp:ListItem>
+            <asp:ListItem Value="43">Kutahya</asp:ListItem>
+            <asp:ListItem Value="44">Malatya</asp:ListItem>
+            <asp:ListItem Value="45">Manisa</asp:ListItem>
+            <asp:ListItem Value="46">Kahramanmaras</asp:ListItem>
+            <asp:ListItem Value="47">Mardin</asp:ListItem>
+            <asp:ListItem Value="48">Mugla</asp:ListItem>
+            <asp:ListItem Value="49">Mus</asp:ListItem>
+            <asp:ListItem Value="50">Nevsehir</asp:ListItem>
+            <asp:ListItem Value="51">Nigde</asp:ListItem>
+            <asp:ListItem Value="52">Ordu</asp:ListItem>
+            <asp:ListItem Value="53">Rize</asp:ListItem>
+            <asp:ListItem Value="54">Sakarya</asp:ListItem>
+            <asp:ListItem Value="55">Samsun</asp:ListItem>
+            <asp:ListItem Value="56">Siirt</asp:ListItem>
+            <asp:ListItem Value="57">Sinop</asp:ListItem>
+            <asp:ListItem Value="58">Sivas</asp:ListItem>
+            <asp:ListItem Value="59">Tekirdag</asp:ListItem>
+            <asp:ListItem Value="60">Tokat</asp:ListItem>
+            <asp:ListItem Value="61">Trabzon</asp:ListItem>
+            <asp:ListItem Value="62">Tunceli</asp:ListItem>
+            <asp:ListItem Value="63">Sanliurfa</asp:ListItem>
+            <asp:ListItem Value="64">Usak</asp:ListItem>
+            <asp:ListItem Value="65">Van</asp:ListItem>
+            <asp:ListItem Value="66">Yozgat</asp:ListItem>
+            <asp:ListItem Value="67">Zonguldak</asp:ListItem>
+            <asp:ListItem Value="68">Aksaray</asp:ListItem>
+            <asp:ListItem Value="69">Bayburt</asp:ListItem>
+            <asp:ListItem Value="70">Karaman</asp:ListItem>
+            <asp:ListItem Value="71">Kirikkale</asp:ListItem>
+            <asp:ListItem Value="72">Batman</asp:ListItem>
+            <asp:ListItem Value="73">Sirnak</asp:ListItem>
+            <asp:ListItem Value="74">Bartin</asp:ListItem>
+            <asp:ListItem Value="75">Ardahan</asp:ListItem>
+            <asp:ListItem Value="76">Igdir</asp:ListItem>
+            <asp:ListItem Value="77">Yalova</asp:ListItem>
+            <asp:ListItem Value="78">Karabuk</asp:ListItem>
+            <asp:ListItem Value="79">Kilis</asp:ListItem>
+            <asp:ListItem Value="80">Osmaniye</asp:ListItem>
+            <asp:ListItem Value="81">Duzce</asp:ListItem>
+        </asp:DropDownList>
+															<button class="btn" onserverclick="Filtrele_click"  runat="server" type="submit">
+															<i class="icons icon-magnifier header-nav-top-icon text-color-dark"></i>ARA
+														</button>
+														</span>
+													</div>
+												</div>
+										
+										</div>
+									</div>
+									<ul class="header-extra-info col-lg-3 col-xl-2 pl-2 pl-xl-0 d-none d-lg-block">
+										<li class="d-none d-sm-inline-flex ml-0">
+										
+										</li>
+									</ul>
+									<div class="d-flex col-auto col-lg-2 pr-0 pl-0 pl-xl-3">
+										<ul class="header-extra-info">
+											<li class="ml-0 ml-xl-4">
+												<div id="profilikon" runat="server" class="header-extra-info-icon">
+													<a href="kullaniciprofili.aspx" class="text-decoration-none text-color-dark text-color-hover-primary text-2">
+														<i class="icons icon-user"></i>
+                                                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+													</a>
+												</div>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-nav-bar header-nav-bar-top-border bg-light">
+						<div class="header-container container">
+							<div class="header-row">
+								<div class="header-column">
+									<div class="header-row justify-content-end">
+										<div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border justify-content-start" data-sticky-header-style="{'minResolution': 991}" data-sticky-header-style-active="{'margin-left': '105px'}" data-sticky-header-style-deactive="{'margin-left': '0'}">
+											<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-3 header-nav-main-sub-effect-1 w-100">
+												<nav class="collapse w-100">
+													<ul class="nav nav-pills w-100" id="mainNav">
+														<li class="dropdown">
+								 							<a class="dropdown-item dropdown-toggle" href="anasayfa.aspx">
+																Anasayfa
+															</a>
+														</li>
+                                                        <li class="dropdown">
+															<a class="dropdown-item dropdown-toggle" href="stajyerleri.aspx">
+																STAJ YERLERİ
+															</a>
+														</li>
+                                                        <li id="adminpaneli" runat="server" visible="false" class="dropdown">
+                                                            <a class="dropdown-item dropdown-toggle" href="admin/adminanasayfa.aspx">
+																Admin Paneli
+                                                            </a>
+														</li>
+                                                        <li id="profil" runat="server" class="dropdown ml-lg-auto">
+															<a href="kullaniciprofili.aspx" class="dropdown-item">
+																PROFİLİM
+															</a>
+														</li>
+														<li id="giris" runat="server" class="dropdown">
+															<a href="kullanicigiris.aspx" class="dropdown-item">
+																GİRİŞ
+															</a>
+														</li>
+                                                        <li id="stj_ekle" runat="server" class="dropdown">
+															<a href="stajyeriekle.aspx" class="dropdown-item">
+																STAJ YERİ EKLE
+															</a>
+														</li>
+                                                        <li id="cikis" runat="server" class="dropdown">
+															<a href="kullanicigiris.aspx" class="dropdown-item">
+																Çıkış
+															</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+											<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+												<i class="fas fa-bars"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+            </div>
+        <div role="main" class="main shop py-4">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder></div>
+        
+			<footer id="footer" class="bg-color-dark-scale-2 border border-right-0 border-left-0 border-bottom-0 border-color-light-3 mt-0">
+				<div class="container text-center my-3 py-5">
+				
+					<p class="text-4 mb-4">Stajyer öğrencilerin yaptığı staj değerlendirmelerini inceleyebilirsiniz.</p>
+					<ul class="social-icons social-icons-big social-icons-dark-2">
+						<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+						<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+				<div class="copyright bg-dark py-4">
+					<div class="container text-center py-2">
+						<p class="mb-0 text-2">Staj Yerleri Websitesi</p>
+					</div>
+				</div>
+			</footer>
+    </div>
+    </form>
+ <script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+		<script src="vendor/popper/umd/popper.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+		<script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+		<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="vendor/lazysizes/lazysizes.min.js"></script>
+		<script src="vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="vendor/vide/jquery.vide.min.js"></script>
+		<script src="vendor/vivus/vivus.min.js"></script>
+		<script src="vendor/bootstrap-star-rating/js/star-rating.min.js"></script>
+		<script src="vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.js"></script>
+
+		<script src="js/theme.js"></script>
+
+		
+
+		<script src="js/views/view.shop.js"></script>
+
+		<script src="js/custom.js"></script>
+
+		<script src="js/theme.init.js"></script>
+</body>
+</html>
